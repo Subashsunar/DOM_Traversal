@@ -30,14 +30,10 @@ console.log(document.getElementById('first-child-ul'));
 var secondElement = document.getElementById('second-child-ul');
 secondElement.style.color = 'red';
 
-secondElement.innerHTML = "JavaScript";
+// secondElement.innerHTML = "JavaScript";
 
-var btnClick = document.getElementById('btnClick');
 btnClick.addEventListener('click', function() {
     document.getElementById('third-child-ul').innerHTML = 'Hello';
-});
-
-var btnClick = document.getElementById('btnClick');
-btnClick.addEventListener('click', function() {
     console.log(`Hello`);
+    secondElement.innerHTML = "JavaScript";
 });
